@@ -41,6 +41,9 @@ setup(
     url="http://www.maxmind.com/",
     packages=["minfraud"],
     include_package_data=True,
+    package_data = {
+        'minfraud': ['py.typed'],
+    },
     platforms="any",
     python_requires=">=3.6",
     install_requires=requirements,
